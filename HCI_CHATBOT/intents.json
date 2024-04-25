@@ -1,0 +1,581 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "Hi there!",
+        "Hello!",
+        "Hey!",
+        "Greetings!"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi! What's on your mind?",
+        "Hey there! How can I support you?",
+        "Greetings! What can I help you with?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "bye_greeting",
+      "patterns": [
+        "Goodbye!",
+        "See you later!",
+        "Take care!",
+        "Bye!"
+      ],
+      "responses": [
+        "Goodbye! Take care of yourself.",
+        "See you later! Remember, I'm here if you need anything.",
+        "Take care! Don't hesitate to reach out if you need assistance.",
+        "Bye! Stay safe and well."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "anxiety_symptoms",
+      "patterns": [
+        "What are the symptoms of anxiety?",
+        "How do I know if I have anxiety?",
+        "Signs of anxiety",
+        "Physical symptoms of anxiety"
+      ],
+      "responses": [
+        "Symptoms of anxiety can include persistent worry, restlessness, rapid heartbeat, and panic attacks."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "stress_management",
+      "patterns": [
+        "How can I manage stress?",
+        "Ways to reduce stress",
+        "Stress relief techniques",
+        "How to deal with stress"
+      ],
+      "responses": [
+        "Managing stress involves exercise, mindfulness, sleep, healthy eating, and seeking support."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "mental_health_support",
+      "patterns": [
+        "Where can I find mental health support?",
+        "How to get help for mental health",
+        "Mental health resources",
+        "Finding a therapist or counselor"
+      ],
+      "responses": [
+        "Mental health support can be found through local services, organizations, online platforms, or by seeking a referral."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "empathetic_listening",
+      "patterns": [
+        "I'm feeling really down lately",
+        "I can't seem to shake this anxiety",
+        "Everything is overwhelming",
+        "I'm not sure I can cope with this stress anymore"
+      ],
+      "responses": [
+        "I'm sorry to hear that. It's okay to feel this way. Do you want to talk more about what's been happening?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "positive_encouragement",
+      "patterns": [
+        "I feel like I'm failing at everything",
+        "Why can't I just be happy?",
+        "I don't see the point in trying anymore"
+      ],
+      "responses": [
+        "It's okay to have setbacks. What's something small that made you smile recently?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "professional_help_guidance",
+      "patterns": [
+        "Should I see a therapist?",
+        "I think I need help but I'm scared to ask for it",
+        "Is it normal to feel this way?"
+      ],
+      "responses": [
+        "Seeking help is a sign of strength. Would you like help finding resources?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "self_care_advice",
+      "patterns": [
+        "How can I take better care of myself mentally?",
+        "What are some self-care practices for good mental health?",
+        "I need some tips on self-care"
+      ],
+      "responses": [
+        "Regular exercise, connecting with loved ones, and mindfulness are important for mental health."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "dealing_with_loneliness",
+      "patterns": [
+        "I feel so lonely",
+        "What can I do about my isolation?",
+        "Feeling lonely is really hard for me"
+      ],
+      "responses": [
+        "Feeling lonely can be tough. Do you have someone to talk to?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "managing_panic_attacks",
+      "patterns": [
+        "How can I manage a panic attack?",
+        "What should I do when I feel a panic attack coming?",
+        "I get overwhelmed by sudden anxiety"
+      ],
+      "responses": [
+        "During a panic attack, focus on breathing and find a quiet space."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "empathetic_stress_remedies",
+      "patterns": [
+        "I'm so stressed out all the time",
+        "I can't relax, too much is going on",
+        "Everything is just piling up and it's overwhelming"
+      ],
+      "responses": [
+        "It sounds like you're carrying a lot. Try relaxation techniques like deep breathing."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "supportive_depression_advice",
+      "patterns": [
+        "I can't find joy in anything",
+        "I feel hopeless and down all the time",
+        "Nothing seems to make me happy anymore"
+      ],
+      "responses": [
+        "Engaging in activities you used to enjoy can help."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "anxiety_coping_strategies",
+      "patterns": [
+        "I get anxious easily these days",
+        "My mind won't stop racing with worries",
+        "I feel tense and can't relax"
+      ],
+      "responses": [
+        "Finding ways to ground yourself can be helpful, like mindfulness or gentle yoga."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "mental_health_medical_questions",
+      "patterns": [
+        "What are common mental health disorders?",
+        "How does therapy help with mental health?",
+        "What medications are used for mental health conditions?"
+      ],
+      "responses": [
+        "Common mental health disorders include anxiety, depression, and bipolar disorder. Therapy helps by providing tools to cope. Medications like SSRIs are used for some conditions."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "general_questions",
+      "patterns": [
+        "What is your name?",
+        "How old are you?",
+        "Where are you from?",
+        "What do you do?"
+      ],
+      "responses": [
+        "I'm here to assist you with your mental health and well-being.",
+        "I don't have a name or age. My purpose is to support you.",
+        "I'm an AI designed to help with mental health questions and concerns."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "empathetic_general_conversations",
+      "patterns": [
+        "I'm feeling lost and confused",
+        "Life feels overwhelming right now",
+        "I don't know what to do with my future",
+        "I'm struggling to find motivation"
+      ],
+      "responses": [
+        "It's okay to feel lost or overwhelmed at times. What's been on your mind lately?",
+        "Feeling unsure about the future is normal. Is there something specific you're worried about?",
+        "Finding motivation can be challenging. What usually helps you feel more motivated?",
+        "I hear you. Sometimes, taking small steps can make a big difference. What's one thing you can do today that you enjoy?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "empathetic_encouragement",
+      "patterns": [
+        "I'm facing a lot of challenges right now",
+        "I don't know if I can handle everything",
+        "I feel like giving up sometimes"
+      ],
+      "responses": [
+        "I understand it's tough right now. You're stronger than you think. What's one small step you can take to make things a bit easier?",
+        "It's okay to feel overwhelmed. Remember, you've overcome challenges before. What's something that usually helps you feel more resilient?",
+        "Feeling like giving up is normal during difficult times. What's one thing you're proud of accomplishing recently?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "empathetic_mental_health_recommendations",
+      "patterns": [
+        "I'm feeling overwhelmed. What should I do?",
+        "How can I take care of my mental health better?",
+        "I'm struggling with anxiety. Any advice?",
+        "What can I do to improve my mood?"
+      ],
+      "responses": [
+        "It's important to take things one step at a time. Try practicing deep breathing exercises to help calm your mind.",
+        "Remember to prioritize self-care. Take breaks when needed, engage in activities you enjoy, and seek support from loved ones or a professional if necessary.",
+        "Anxiety can be challenging, but you're not alone. Consider trying mindfulness or relaxation techniques to help manage your anxiety.",
+        "Improving your mood can start with small changes. Try going for a walk outdoors, listening to uplifting music, or writing down positive affirmations."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "medications_for_mental_health",
+      "patterns": [
+        "Are there medications for mental health?",
+        "How do medications help with mental health?",
+        "What types of medications are used for mental health conditions?"
+      ],
+      "responses": [
+        "Yes, there are medications commonly used to treat mental health conditions. They can help regulate brain chemistry and reduce symptoms.",
+        "Medications for mental health can be helpful in managing symptoms such as anxiety, depression, and mood disorders. They work by affecting neurotransmitters in the brain.",
+        "Different types of medications are used based on the specific mental health condition. Examples include SSRIs for depression and anxiety, mood stabilizers for bipolar disorder, and antipsychotics for schizophrenia."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "common_mental_health_medications",
+      "patterns": [
+        "What are some common medications for mental health?",
+        "Can you list medications used for mental health?",
+        "Which medicines are commonly prescribed for mental health conditions?"
+      ],
+      "responses": [
+        "Here are some common medications used for mental health conditions:",
+        {
+          "medications": [
+            {
+              "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+              "examples": ["Prozac (fluoxetine)", "Zoloft (sertraline)", "Lexapro (escitalopram)"],
+              "used_for": "Depression, anxiety disorders, OCD, panic disorder, PTSD"
+            },
+            {
+              "name": "Benzodiazepines",
+              "examples": ["Xanax (alprazolam)", "Ativan (lorazepam)", "Valium (diazepam)"],
+              "used_for": "Short-term relief of anxiety, panic attacks, insomnia, muscle spasms"
+            }
+          ]
+        }
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "understanding_therapy",
+      "patterns": [
+        "What should I expect from therapy?",
+        "How does counseling work?",
+        "Benefits of seeing a therapist",
+        "What happens in a therapy session?"
+      ],
+      "responses": [
+        "Starting therapy can be a big step toward self-care. It's all about speaking with a trained professional who listens and helps you work through your challenges in a safe and supportive environment."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "dealing_with_grief_and_loss",
+      "patterns": [
+        "How do I cope with the loss of a loved one?",
+        "Dealing with grief",
+        "Stages of grief",
+        "Support for grieving"
+      ],
+      "responses": [
+        "I'm really sorry for your loss. Grieving is a deeply personal process, and it's okay to feel a range of emotions. Seeking support from friends, family, or professionals can be very comforting."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "feelings_of_inadequacy",
+      "patterns": [
+        "I feel like I'm not good enough",
+        "Why am I always falling short?",
+        "Everyone seems to be doing better than me",
+        "I don't feel adequate"
+      ],
+      "responses": [
+        "It's really tough to feel like you're not measuring up, but remember, everyone's journey is different. It's okay to be exactly where you are right now. How can I support you in feeling more confident?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "finding_purpose",
+      "patterns": [
+        "What is my purpose in life?",
+        "I'm struggling to find meaning",
+        "Life seems pointless",
+        "How do I find what I'm passionate about?"
+      ],
+      "responses": [
+        "Finding purpose is a journey that takes time and self-exploration. It’s okay to feel uncertain. Let's talk about what you love doing and what makes you feel alive."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "reading_for_relaxation",
+      "patterns": [
+        "Can reading help reduce stress?",
+        "Best books for anxiety relief",
+        "How does reading affect the brain?",
+        "Reading habits for mental health"
+      ],
+      "responses": [
+        "Reading is a fantastic way to escape and unwind, offering a break from daily stressors. It can also provide new insights or inspiration. What type of books do you enjoy? Maybe I can suggest some titles."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "listening_to_music",
+      "patterns": [
+        "Can music help with stress?",
+        "Best music for relaxation",
+        "How does music influence mood?",
+        "Music therapy for mental health"
+      ],
+      "responses": [
+        "Listening to music can have a powerful effect on your mood, helping to calm anxiety and elevate spirits. Have you thought about creating a playlist of songs that make you feel relaxed or uplifted?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "movie_suggestions",
+      "patterns": [
+        "Can you suggest some movies about mental health?",
+        "Movies that deal with depression",
+        "What are some good films about personal growth?"
+      ],
+      "responses": [
+        "Here are some movies that thoughtfully address mental health and personal growth: 'Silver Linings Playbook' explores recovery and relationships, 'Inside Out' offers a look at managing emotions, and 'A Beautiful Mind' portrays the challenges of living with schizophrenia."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "book_suggestions",
+      "patterns": [
+        "Recommend some books on mental health",
+        "Books for understanding depression",
+        "What are some inspiring books for personal development?"
+      ],
+      "responses": [
+        "I recommend 'The Noonday Demon' by Andrew Solomon for a deep dive into depression, 'Man's Search for Meaning' by Viktor Frankl for profound insights on finding purpose, and 'The Gifts of Imperfection' by Brené Brown for embracing personal growth."
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "daily_check_in",
+      "patterns": [
+        "How should I start my day?",
+        "What can I do today to feel better?",
+        "Give me a morning motivation"
+      ],
+      "responses": [
+        "Starting your day with a small, achievable goal can set a positive tone. How about taking a few minutes to meditate or write down what you're grateful for today? It's a great way to bring some positivity into your morning!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "general_motivation",
+      "patterns": [
+        "I need some motivation",
+        "Can you help me get motivated?",
+        "I'm feeling unmotivated"
+      ],
+      "responses": [
+        "It's completely normal to feel unmotivated at times. Let's break down what you need to do into smaller, more manageable steps. What’s one small task you can accomplish right now? Sometimes, starting is the hardest part."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "casual_conversation",
+      "patterns": [
+        "Let's chat about something fun",
+        "Tell me something interesting",
+        "I just want to talk"
+      ],
+      "responses": [
+        "Absolutely! Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old and still perfectly good to eat. What's something fun you've learned recently?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sharing_hobbies",
+      "patterns": [
+        "What hobbies do you recommend?",
+        "I need a new hobby",
+        "Suggestions for fun activities"
+      ],
+      "responses": [
+        "Exploring new hobbies can be really rewarding! How about trying something creative like painting or photography? Or perhaps something more active like hiking or yoga. It's all about finding what energizes and relaxes you."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "stress_relief_tips",
+      "patterns": [
+        "I'm so stressed",
+        "How can I reduce stress quickly?",
+        "Quick stress relief methods"
+      ],
+      "responses": [
+        "When you're feeling stressed, quick relief can come from several simple techniques. Try deep breathing exercises, a short walk, or listening to calming music. Identifying what triggers your stress and managing those triggers can also be very effective."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "life_advice",
+      "patterns": [
+        "I need some life advice",
+        "Can you give me guidance on making decisions?",
+        "How should I approach making a big life change?"
+      ],
+      "responses": [
+        "Making big decisions can feel daunting. It can help to write down the pros and cons, talk it over with someone you trust, or even seek professional advice if it’s a major change. Remember, it’s okay to take your time to make sure you’re making the right decision for you."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "finding_happiness",
+      "patterns": [
+        "How can I be happier?",
+        "Tips for finding happiness",
+        "I want to feel more joyful"
+      ],
+      "responses": [
+        "Happiness often comes from appreciating the little things in life. Engaging in activities you love, spending time with loved ones, and practicing gratitude can all boost your mood. What brings you joy?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "dealing_with_anxiety",
+      "patterns": [
+        "I'm feeling anxious",
+        "How to handle anxiety?",
+        "Tips for managing anxiety"
+      ],
+      "responses": [
+        "Managing anxiety involves understanding your triggers and finding effective coping strategies, such as mindfulness, deep breathing, or professional support. Would you like to explore some techniques together?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "building_resilience",
+      "patterns": [
+        "How can I build resilience?",
+        "Bouncing back from hardships",
+        "Strengthening mental resilience"
+      ],
+      "responses": [
+        "Building resilience is about developing the ability to recover from difficulties. It involves maintaining a positive outlook, adapting to situations, and learning from experiences. What’s a challenge you've overcome in the past that shows your resilience?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pet_loss",
+      "patterns": [
+        "My cat died",
+        "I'm sad because my pet passed away",
+        "Losing a pet is so hard"
+      ],
+      "responses": [
+        "I'm truly sorry to hear about the loss of your cat. It's clear you cared deeply for your pet, and it's normal to feel profound sadness. If you want to share, I’m here to listen to your favorite memories with your cat."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "job_loss",
+      "patterns": [
+        "I lost my job",
+        "I was laid off and feel lost",
+        "Losing my job has been really tough"
+      ],
+      "responses": [
+        "I'm so sorry to hear that you've lost your job. That must be really challenging for you. It's okay to feel upset or uncertain about what comes next. If you’d like, we can discuss some steps to help you move forward when you feel ready."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "relationship_breakup",
+      "patterns": [
+        "My partner and I broke up",
+        "I'm going through a tough breakup",
+        "It's hard moving on after a breakup"
+      ],
+      "responses": [
+        "I'm sorry to hear about your breakup. That can be incredibly hard, and it's normal to feel a range of emotions. Taking things one day at a time can help. If you want to talk about it, I'm here to listen."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "financial_stress",
+      "patterns": [
+        "I'm worried about money",
+        "Financial stress is getting to me",
+        "It's hard to make ends meet"
+      ],
+      "responses": [
+        "Dealing with financial stress is tough, and it's understandable to feel overwhelmed. Sometimes, breaking down your budget and looking into options for financial advice might help ease the burden. Would you like to discuss strategies to manage financial stress?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "loss_of_loved_one",
+      "patterns": [
+        "I lost someone close to me",
+        "Dealing with the death of a loved one",
+        "I'm grieving and it feels unbearable"
+      ],
+      "responses": [
+        "I'm very sorry for your loss. Grieving can feel so heavy, and it's important to allow yourself to feel and express your sadness. Surrounding yourself with supportive people can also help. I'm here for you to talk to anytime you need."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "feeling_lonely",
+      "patterns": [
+        "I feel lonely",
+        "Sometimes, I feel like I have no one",
+        "It's hard being so isolated"
+      ],
+      "responses": [
+        "Feeling lonely is really tough, and it's brave of you to share that. Finding community, even online, or reconnecting with old friends can sometimes help. What are some things you enjoy doing that might also connect you with others?"
+      ],
+      "context": [""]
+    }
+    
+  ]
+}
